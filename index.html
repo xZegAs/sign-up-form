@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="logo">
+        <div class="logo-bg">
+            <img src="./imgs/odin-lined.png" class="logo-img">
+            <span class="odin">ODIN</span>
+        </div>
+        <p class="logo-footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Hailie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+
+    <div class="main">
+
+
+        <header class="text">
+            <p class="text-header">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+            <p class="text-footer">You <em>know</em> you want to.</p>
+        </header>
+    
+    
+        <form class="form" id="form">
+
+            <legend class="legend">Let's Do This!</legend>
+
+            <div class="form-group">
+
+                <div class="field">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Thor" required/>
+                </div>
+
+                <div class="field">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Odinson" required/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <div class="field">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="example@something.com" required/>
+                </div>
+
+                <div class="field">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="000-000-000" required/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <div class="field">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" minlength="8" placeholder="Password" required/>
+                </div>
+
+                <div class="field">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" placeholder="Confirm Password" required/>
+                </div>
+
+            </div>
+
+        </form>
+
+        <button type="submit" form="form" class="submit">Create Account</button>
+
+        <p class="member">Already have an account? <a href="#">Log In</a></p>
+
+
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
